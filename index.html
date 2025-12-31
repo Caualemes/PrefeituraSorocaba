@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Municipal de Sorocaba-SP</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/prefeituradesorocaba/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/prefeituradesorocaba/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="top-right">
+                <span>login / cadastro <i class="fas fa-lock"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container header-content">
+            
+            <div class="logo">
+                <img src="assets/logo-header.png" alt="Brasão Sorocaba">
+            </div>
+            
+            <div class="header-right-group">
+                
+                <div class="weather-widget">
+                    <i class="fas fa-cloud-sun"></i> 27°C
+                </div>
+
+                <div class="action-row">
+                    <div class="profile-tags">
+                        <button class="tag-btn">CIDADÃO</button>
+                        <button class="tag-btn">EMPRESA</button>
+                        <button class="tag-btn">SERVIDOR</button>
+                        <button class="tag-btn">TURISTA</button>
+                    </div>
+                    
+                    <div class="search-bar">
+                        <input type="text" placeholder="O que você procura?">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Cidade</a></li>
+                <li><a href="#">Governo</a></li>
+                <li><a href="#">Transparência</a></li>
+                <li><a href="#">Ouvidoria</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="assets/banner1.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="assets/banner2.png" alt="Banner 2">
+            </div>
+            
+            <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+            
+            <div class="carousel-indicators">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <main class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="far fa-newspaper"></i> Últimas Notícias</h2>
+                <a href="#" class="view-more">ver mais</a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="img-wrapper">
+                        <img src="assets/n1.png" alt="Notícia">
+                    </div>
+                    <div class="news-text">
+                        <h3>Sorocaba registra recorde de temperatura nesta quinta-feira</h3>
+                        <p>A região de Sorocaba (SP) enfrentou mais um dia de calor intenso nesta quarta-feira (25). Segundo registros meteorológicos, a cidade bateu recorde de temperatura, alcançando 35,7°C durante a tarde.</p>
+                    </div>
+                </article>
+
+                <div class="news-list">
+                    <article class="news-card small">
+                        <img src="assets/n2.png" alt="Thumb">
+                        <div class="news-text">
+                            <h3>Prefeitura de Sorocaba oferece tradicionais cursos de férias</h3>
+                            <p>As vagas são limitadas e, por isso, será necessário se inscrever.</p>
+                        </div>
+                    </article>
+                    <article class="news-card small">
+                        <img src="assets/n3.png" alt="Thumb">
+                        <div class="news-text">
+                            <h3>Incêndio atinge prédio na Vila Barcelona</h3>
+                            <p>Uma pessoa foi resgatada sem ferimentos.</p>
+                        </div>
+                    </article>
+                    <article class="news-card small">
+                        <img src="assets/n4.png" alt="Thumb">
+                        <div class="news-text">
+                            <h3>Missas celebram o Natal com programação especial</h3>
+                            <p>Igrejas da cidade realizam missas em diferentes horários.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="quick-access">
+        <div class="container">
+            <h2 class="text-center">ACESSO RÁPIDO</h2>
+            <div class="access-grid">
+                <div class="access-card">
+                    <i class="fas fa-book-open"></i>
+                    <span>DIÁRIO OFICIAL</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-passport"></i>
+                    <span>INSCRIÇÃO MUNICIPAL</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-gavel"></i>
+                    <span>LICITAÇÃO</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-search"></i>
+                    <span>CONSULTA DE PROCESSOS</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-edit"></i>
+                    <span>PROCESSOS SELETIVOS</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>CONSULTAR HOLERITE</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-file-alt"></i>
+                    <span>NOTA FISCAL ELETRÔNICA</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>IPTU E TAXAS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-main">
+            
+            <div class="footer-logo-area">
+                <img src="assets/logo-footer.png" alt="Brasão Sorocaba">
+                <div class="footer-decoration"></div> </div>
+
+            <div class="container footer-grid">
+                <div class="footer-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>LOCALIZAÇÃO</h4>
+                    <p>Av. Engenheiro Carlos Reinaldo<br>Mendes, 3041</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fas fa-user"></i>
+                    <h4>ATENDIMENTO</h4>
+                    <p>Atendimento de segunda-feira a<br>sexta-feira das 9h às 17h</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>TELEFONE</h4>
+                    <p>(15) 3238-2100</p>
+                </div>
+            </div>
+
+            <div class="footer-system-info">
+                <div class="container">
+                    <span>
+                        <i class="fas fa-wrench"></i> Versão do Sistema: 3.4.4 - 23/07/2025
+                    </span>
+                    <span class="separator"></span>
+                    <span>
+                        <i class="far fa-clock"></i> Portal atualizado em: 24/12/2025 20:33
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container copyright-flex">
+                <p>&copy; Copyright Instar - 2006-2025. Todos os direitos reservados - Instar Tecnologia</p>
+                <div class="instar-logo">
+                    <img src="assets/instar.png" width="80px" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
