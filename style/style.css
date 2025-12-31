@@ -560,6 +560,34 @@ footer {
     bottom: 10px;
 }
 
+.btn-accessibility {
+    position: fixed;  /* O segredo: fixa na tela do navegador */
+    bottom: 20px;     /* Distância do rodapé da tela */
+    right: 20px;      /* Distância da lateral direita */
+    z-index: 9999;    /* Garante que fique por cima de tudo */
+    
+    background-color: #0056b3; /* Azul padrão de acessibilidade */
+    color: white;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Deixa redondinho */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para dar destaque */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-accessibility:hover {
+    transform: scale(1.1); /* Aumenta um pouquinho ao passar o mouse */
+    background-color: var(--dark-blue);
+}
+
 /* Responsividade do Footer */
 @media (max-width: 768px) {
     .footer-grid {
