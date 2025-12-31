@@ -579,12 +579,12 @@ footer {
     
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para dar destaque */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .btn-accessibility:hover {
-    transform: scale(1.1); /* Aumenta um pouquinho ao passar o mouse */
+    transform: scale(1.1); 
     background-color: var(--dark-blue);
 }
 
