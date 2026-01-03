@@ -19,7 +19,7 @@
             <div class="social-icons">
                 <a href="https://www.instagram.com/prefeituradesorocaba/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/prefeituradesorocaba/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5515991117448&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
             </div>
             <div class="top-right">
                 <span>login / cadastro <i class="fas fa-lock"></i></span>
@@ -35,7 +35,6 @@
             </div>
             
             <div class="header-right-group">
-                
                 <div class="weather-widget">
                     <i class="fas fa-cloud-sun"></i> 27°C
                 </div>
@@ -53,12 +52,47 @@
                         <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <nav class="main-nav">
+    <div class="mobile-menu-wrapper">
+        
+        <div class="mobile-menu-trigger" id="btnMenu">
+            MENU <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            
+            <div class="mobile-menu-content">
+                <nav class="mobile-links">
+                    <a href="#">PRINCIPAL</a>
+                    <a href="#">CIDADE</a>
+                    <a href="#">GOVERNO</a>
+                    <a href="#">TRANSPARÊNCIA</a>
+                    <a href="#">OUVIDORIA</a>
+                    <a href="#">SERVIÇOS</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">DIÁRIO OFICIAL</a>
+                    <a href="#">CONSULTAR HOLERITE</a>
+                    <a href="#">PROCESSOS SELETIVOS</a>
+                    <a href="#">CONSULTA DE PROCESSOS</a>
+                    <a href="#">INSCRIÇÃO MUNICIPAL</a>
+                    <a href="#">LICITAÇÃO</a>
+                    <a href="#">NOTA FISCAL ELETRÔNICA</a>
+                    <a href="#">IPTU E TAXAS</a>
+                </nav>
+            </div>
+
+            <div class="close-menu-area" id="btnCloseArea">
+                <button class="btn-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav desktop-only">
         <div class="container">
             <ul>
                 <li><a href="#">Principal</a></li>
@@ -94,13 +128,12 @@
 
     <main class="news-section">
         <div class="container">
-            <div class="section-header">
-                <h2><i class="far fa-newspaper"></i> Últimas Notícias</h2>
-                <a href="#" class="view-more">ver mais</a>
+            <div class="section-header centered">
+                <h2><i class="far fa-newspaper"></i> ÚLTIMAS NOTÍCIAS </h2>
             </div>
             
             <div class="news-grid">
-                <article class="news-card featured">
+                <a href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/12/25/sorocaba-registra-recorde-de-temperatura-nesta-quinta-feira.ghtml" class="news-card featured" target="_blank">
                     <div class="img-wrapper">
                         <img src="assets/n1.png" alt="Notícia">
                     </div>
@@ -108,31 +141,37 @@
                         <h3>Sorocaba registra recorde de temperatura nesta quinta-feira</h3>
                         <p>A região de Sorocaba (SP) enfrentou mais um dia de calor intenso nesta quarta-feira (25). Segundo registros meteorológicos, a cidade bateu recorde de temperatura, alcançando 35,7°C durante a tarde.</p>
                     </div>
-                </article>
+                </a>
 
                 <div class="news-list">
-                    <article class="news-card small">
+                    <a href="https://noticias.sorocaba.sp.gov.br/prefeitura-de-sorocaba-oferece-tradicionais-cursos-de-ferias-gratuitos-nos-parques/" class="news-card small" target="_blank">
                         <img src="assets/n2.png" alt="Thumb">
                         <div class="news-text">
                             <h3>Prefeitura de Sorocaba oferece tradicionais cursos de férias</h3>
-                            <p>As vagas são limitadas e, por isso, será necessário se inscrever.</p>
+                            <p>As vagas são limitadas e, por isso, será necessário se inscrever de 29 de dezembro a 5 de janeiro.</p>
                         </div>
-                    </article>
-                    <article class="news-card small">
+                    </a>
+                    
+                    <a href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/12/24/missas-celebram-o-natal-com-programacao-especial-em-sorocaba.ghtml" class="news-card small" target="_blank">
                         <img src="assets/n3.png" alt="Thumb">
+                        <div class="news-text">
+                            <h3>Missas celebram o Natal com programação especial em Sorocaba</h3>
+                            <p>Igrejas da cidade realizam missas em diferentes horários para marcar o nascimento de Jesus Cristo.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.jornalcruzeiro.com.br/sorocaba/noticias/2025/12/755601-incendio-atinge-predio-na-vila-barcelona.html#:~:text=O%20Corpo%20de%20Bombeiros%20controlou,mobilizadas%20para%20atender%20%C3%A0%20ocorr%C3%AAncia." class="news-card small" target="_blank">
+                        <img src="assets/n4.png" alt="Thumb">
                         <div class="news-text">
                             <h3>Incêndio atinge prédio na Vila Barcelona</h3>
                             <p>Uma pessoa foi resgatada sem ferimentos.</p>
                         </div>
-                    </article>
-                    <article class="news-card small">
-                        <img src="assets/n4.png" alt="Thumb">
-                        <div class="news-text">
-                            <h3>Missas celebram o Natal com programação especial</h3>
-                            <p>Igrejas da cidade realizam missas em diferentes horários.</p>
-                        </div>
-                    </article>
+                    </a>
                 </div>
+            </div>
+
+            <div class="view-more-container">
+                <a href="#" class="view-more-btn">ver mais</a>
             </div>
         </div>
     </main>
@@ -146,6 +185,18 @@
                     <span>DIÁRIO OFICIAL</span>
                 </div>
                 <div class="access-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>CONSULTAR HOLERITE</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-edit"></i>
+                    <span>PROCESSOS SELETIVOS</span>
+                </div>
+                <div class="access-card">
+                    <i class="fas fa-search"></i>
+                    <span>CONSULTA DE PROCESSOS</span>
+                </div>
+                <div class="access-card">
                     <i class="fas fa-passport"></i>
                     <span>INSCRIÇÃO MUNICIPAL</span>
                 </div>
@@ -154,24 +205,13 @@
                     <span>LICITAÇÃO</span>
                 </div>
                 <div class="access-card">
-                    <i class="fas fa-search"></i>
-                    <span>CONSULTA DE PROCESSOS</span>
-                </div>
-                <div class="access-card">
-                    <i class="fas fa-edit"></i>
-                    <span>PROCESSOS SELETIVOS</span>
-                </div>
-                <div class="access-card">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <span>CONSULTAR HOLERITE</span>
-                </div>
-                <div class="access-card">
                     <i class="fas fa-file-alt"></i>
                     <span>NOTA FISCAL ELETRÔNICA</span>
                 </div>
-                <div class="access-card">
-                    <i class="fas fa-dollar-sign"></i>
-                    <span>IPTU E TAXAS</span>
+
+                <div class="access-card" id="btnMoreOptions" style="cursor: pointer; background-color: #13447c;">
+                    <i class="fas fa-bars"></i>
+                    <span>DEMAIS OPÇÕES</span>
                 </div>
             </div>
         </div>
@@ -182,23 +222,47 @@
             
             <div class="footer-logo-area">
                 <img src="assets/logo-footer.png" alt="Brasão Sorocaba">
-                <div class="footer-decoration"></div> </div>
+                <div class="footer-decoration"></div> 
+            </div>
 
             <div class="container footer-grid">
+                
+                <div class="mobile-social-area">
+                    <h4>SIGA-NOS</h4>
+                    <div class="social-row">
+                        <a href="https://www.instagram.com/prefeituradesorocaba/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/prefeituradesorocaba/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5515991117448&text&type=phone_number&app_absent=0">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
                 <div class="footer-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <h4>LOCALIZAÇÃO</h4>
-                    <p>Av. Engenheiro Carlos Reinaldo<br>Mendes, 3041</p>
+                    <div class="footer-text">
+                        <h4>LOCALIZAÇÃO</h4>
+                        <p>Av. Engenheiro Carlos Reinaldo Mendes, 3041</p>
+                    </div>
                 </div>
+
                 <div class="footer-item">
                     <i class="fas fa-user"></i>
-                    <h4>ATENDIMENTO</h4>
-                    <p>Atendimento de segunda-feira a<br>sexta-feira das 9h às 17h</p>
+                    <div class="footer-text">
+                        <h4>ATENDIMENTO</h4>
+                        <p>Segunda a sexta das 9h às 17h</p>
+                    </div>
                 </div>
+
                 <div class="footer-item">
                     <i class="fas fa-phone-alt"></i>
-                    <h4>TELEFONE</h4>
-                    <p>(15) 3238-2100</p>
+                    <div class="footer-text">
+                        <h4>TELEFONE</h4>
+                        <p>(15) 3238-2100</p>
+                    </div>
                 </div>
             </div>
 
@@ -217,9 +281,10 @@
 
         <div class="footer-bottom">
             <div class="container copyright-flex">
-                <p>&copy; Copyright Instar - 2006-2025. Todos os direitos reservados - Instar Tecnologia</p>
+                <p>Todos os direitos reservados - Instar Tecnologia<br>&copy; Copyright Instar - 2006-2025.</p>
+                
                 <div class="instar-logo">
-                    <img src="assets/instar.png" width="80px" alt="">
+                    <img src="assets/instar.png" width="80px" alt="Logo Instar">
                 </div>
             </div>
         </div>
